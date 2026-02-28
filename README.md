@@ -8,7 +8,72 @@ This project demonstrates how modern large language models work internally by bu
 Everything runs inside one Google Colab notebook, making the project accessible, reproducible, and educational.
 
 🌟 Why This Project Stands Out
+# miniGPT (JAX, Google Colab)
 
+This repository contains a miniGPT (GPT-style Transformer language model) implemented and trained using the JAX AI stack.  
+The entire implementation is done inside a single Google Colab notebook.
+
+The goal of this project is to understand and implement a decoder-only Transformer model for causal language modeling using JAX.
+
+---
+
+## Overview
+
+- GPT-style autoregressive language model
+- Decoder-only Transformer architecture
+- Implemented using JAX, Flax, and Optax
+- Trained on text data using causal language modeling
+- Executed completely in Google Colab
+
+---
+
+## Technologies Used
+
+- JAX
+- Flax (Linen)
+- Optax
+- NumPy
+- Google Colab
+
+---
+
+## Project Structure
+
+This project does not follow a folder-based structure.
+
+All code is contained in a single notebook:
+
+The notebook includes:
+- Dataset loading and preprocessing
+- Tokenization
+- Model definition (miniGPT)
+- Training loop
+- Loss computation
+- Text generation
+
+---
+
+## Model Architecture
+
+- Token Embedding
+- Positional Embedding
+- Multiple Transformer Decoder Blocks
+  - Multi-Head Self-Attention (causal)
+  - Layer Normalization
+  - Feed Forward Network
+- Linear output projection
+
+Causal masking is used to ensure autoregressive behavior.
+
+---
+
+## Running the Notebook
+
+1. Open `miniGPT_JAX_Colab.ipynb` in Google Colab
+2. Enable GPU or TPU from Runtime settings
+3. Install dependencies:
+   ```bash
+   pip install jax jaxlib flax optax
 ✅ From Scratch — No HuggingFace Trainer, no shortcuts
 ✅ JAX-Native — Pure functional training loops
 ✅ Single-Notebook Design — Clean & reproducible
