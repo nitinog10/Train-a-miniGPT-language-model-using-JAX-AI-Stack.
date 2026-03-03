@@ -1,4 +1,4 @@
-# 🤖 miniGPT — JAX Implementation (Google Colab)
+# 🤖 miniGPT — JAX Implementation (Google Colab) aa
 
 A minimal implementation of a **GPT-style Transformer language model** trained using the **JAX AI stack**, fully executed inside **Google Colab**.
 
