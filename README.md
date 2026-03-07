@@ -159,3 +159,11 @@ The `model workflow/model.py` file is designed to implement a miniGPT language m
 - The attention mask must be correctly formatted to avoid runtime errors in the self-attention mechanism.
 ```
 
+## Code Improvements Applied
+
+- Add regression tests around the highest-risk files: `model workflow/model.py`.
+- Consider extracting shared utility code into a dedicated module to lower coupling.
+- Re-index and regenerate walkthroughs/diagrams after structural changes to keep documentation current.
+
+Files changed:
+- `model workflow/model.py`
